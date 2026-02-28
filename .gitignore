@@ -1,0 +1,26 @@
+# IDE-related files
+.vscode/
+.idea/
+*.iml
+
+# Build output
+target/
+
+# Maven-related files
+.m2/
+.mvn/
+pom.xml.backup
+
+# Log files
+*.log
+
+# Temporary files
+*.tmp
+*.swp
+*.swo
+*.bak
+Thumbs.db
+ehthumbs.db
+
+# macOS specific files
+.DS_Store
