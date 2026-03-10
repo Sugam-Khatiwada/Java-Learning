@@ -29,8 +29,12 @@ public class View {
                 case "1":
                     System.out.print("Enter topic name: ");
                     String topicName = sc.nextLine();
+                    try{
                     Topic topic = topicController.addTopic(topicName);
                     System.out.println("Topic added with ID: " + topic.getId());
+                    } catch (Exception e) {
+                        System.out.println("Error adding topic: " + e.getMessage());
+                    }
                     break;
 
                 case "2":
