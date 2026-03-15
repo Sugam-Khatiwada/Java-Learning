@@ -24,8 +24,12 @@ public class TopicController {
         return topic;
     }
 
-    public List<Topic> getAllTopics() {
-        return topics;
+    public List<Topic> getAllTopics() throws SQLException {
+        // return topics;
+        // Dao sanga data magxa List<Topic> ko format ma aani return garxa
+        TopicDao topicDao = new TopicDao();
+        List<Topic> topicList = topicDao.selectTopics();
+        return topicList;
     }
 
     public Topic getTopicById(int id) {

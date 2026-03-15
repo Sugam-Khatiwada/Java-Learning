@@ -4,11 +4,12 @@ import com.learninglog.controller.TopicController;
 import com.learninglog.model.Topic;
 import com.learninglog.model.Entry;
 
+import java.sql.SQLException;
 import java.util.List;
 import java.util.Scanner;
 
 public class View {
-    public void startProgram() {
+    public void startProgram() throws SQLException {
         Scanner sc = new Scanner(System.in);
         TopicController topicController = new TopicController();
         EntryController entryController = new EntryController();
